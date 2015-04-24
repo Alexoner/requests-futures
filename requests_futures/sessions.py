@@ -25,9 +25,8 @@ from requests import Session
 from requests.adapters import DEFAULT_POOLSIZE, HTTPAdapter
 
 class Callback(object):
-    def __init__(self,session=None,response=None):
-        self.session = session
-        self.response = response
+    def __init__(self):
+        pass
 
     def execute(self):
         raise NotImplementedError("Should have implemented this!")

@@ -22,9 +22,9 @@ class Mycb(Callback):
         #super(Callback,self).__init__()
         #pass
 
-    def __init__(self,session=None,response=None,data=None):
+    def __init__(self,data=None):
         self.data = data
-        Callback.__init__(self,session,response)
+        Callback.__init__(self)
         #super(Callback,self).__init__(session,response)
 
     def execute(self):
